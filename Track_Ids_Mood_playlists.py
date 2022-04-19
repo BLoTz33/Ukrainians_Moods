@@ -15,7 +15,7 @@ token_header = {
 }
 auth_response = requests.post(auth_url,data=Grant_token,headers=token_header)
 
-if auth_response.status_code in range(200,299):
+if auth_response.status_code not in range(200,299):
     print('Failed')
 else:
     token_respone = auth_response.json()
