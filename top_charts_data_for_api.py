@@ -55,8 +55,8 @@ print(len(List_for_track_features))
 
 
 
-client_id = '7e203edc04004e5082fd1eb9ec9abfa2'
-client_secret = 'a9f71b4ef21b4b1b9f08d918c04c0c89'
+client_id = 'xxxxx'
+client_secret = 'xxxxx'
 auth_url = 'https://accounts.spotify.com/api/token'
 
 Grant_token = {'grant_type': 'client_credentials'}
