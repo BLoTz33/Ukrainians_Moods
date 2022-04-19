@@ -7,15 +7,15 @@ import base64
 import numpy as np
 from create_datafram_tracks import Dataframe_Audio_features
 ##import datasets for each week to retrive urls
-dataset_week_24 = pd.read_csv(r'C:\Users\max\OneDrive\Desktop\Ukraine Spotify'
+dataset_week_24 = pd.read_csv(r'C:\Users\Name\OneDrive\Desktop\Ukraine Spotify'
                               r'\regional-ua-weekly-2022-02-24.csv')
-dataset_week_03 = pd.read_csv(r'C:\Users\max\OneDrive\Desktop\Ukraine Spotify'
+dataset_week_03 = pd.read_csv(r'C:\Users\Name\OneDrive\Desktop\Ukraine Spotify'
                               r'\regional-ua-weekly-2022-03-03.csv')
-dataset_week_10 = pd.read_csv(r'C:\Users\max\OneDrive\Desktop\Ukraine Spotify'
+dataset_week_10 = pd.read_csv(r'C:\Users\Name\OneDrive\Desktop\Ukraine Spotify'
                               r'\regional-ua-weekly-2022-03-10.csv')
-dataset_week_17 = pd.read_csv(r'C:\Users\max\OneDrive\Desktop\Ukraine Spotify'
+dataset_week_17 = pd.read_csv(r'C:\Users\Name\OneDrive\Desktop\Ukraine Spotify'
                               r'\regional-ua-weekly-2022-03-17.csv')
-dataset_week_03_24 = pd.read_csv(r'C:\Users\max\OneDrive\Desktop\Ukraine Spotify'
+dataset_week_03_24 = pd.read_csv(r'C:\Users\Name\OneDrive\Desktop\Ukraine Spotify'
                               r'\regional-ua-weekly-2022-03-24.csv')
 #check datasets info
 #print(dataset_week_24.info())
@@ -78,7 +78,7 @@ track_retrive_header = {
     'Content-Type':'application/json',
     'Authorization':f'Bearer {access_token}',
 }
-id = '5jXocrsUwpKwWyI5BZLKFA'
+
 request_url = f'https://api.spotify.com/v1/audio-features/{id}'
 
 one = np.ones(100,int)
