@@ -53,11 +53,23 @@ for key in list_of_playlist_ids:
             track_id = tr.get('track').get('id')
             list_of_track_ids[key].add(track_id)
 
+track_retrive_header = {
+    'Content-Type':'application/json',
+    'Authorization':f'Bearer {access_token}',
+}
 
+list_for_track_features = [[],[],[],[],[]]
 
-
-
-
-
-
-
+for key in list_of_track_ids:
+    Id_list = list_of_track_ids[key]
+    j = 0
+    for i in Id_list:
+        request_url = f'https://api.spotify.com/v1/audio-features/{i}'
+        pr = requests.get(request_url, headers=track_retrive_header)
+        if pr.status_code in range(200,299):
+            track_features = pr.json()
+            track_data_copy = track_features.copy()
+            list_for_track_features[j].append(track_data_copy)
+        else:
+            print('Failed')
+    j += 1
