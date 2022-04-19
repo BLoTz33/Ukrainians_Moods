@@ -85,10 +85,11 @@ one = np.ones(100,int)
 for_iterations = {}
 for i in range(10):
     for_iterations[i] = one*i
-
+    
+    
+j = 0
 for key1 in Urls_100s:
     id_list = Urls_100s[key1]
-    j = 0
     for i in id_list:
         request_url = f'https://api.spotify.com/v1/audio-features/{i}'
         pr = requests.get(request_url, headers=track_retrive_header)
