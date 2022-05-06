@@ -1,6 +1,6 @@
 from Spotify import Dataframe_Audio_features, SpotifyAPI
-client_id = '7e203edc04004e5082fd1eb9ec9abfa2'
-client_secret = 'a9f71b4ef21b4b1b9f08d918c04c0c89'
+client_id = xxxxxxxx
+client_secret = xxxxxxx
 initial = SpotifyAPI(Client_ID=client_id,Client_Secret=client_secret)
 SpotifyAPI.Get_Token(initial)
 dict_of_playlist_ids = {'Happy': '5FsxoaKvSUZyl9noSlYlwx',
