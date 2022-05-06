@@ -41,8 +41,8 @@ Urls_100s = {
 }
 # create dict for Audio features
 List_for_track_features = [[] for _ in range(10)]
-client_id = '7e203edc04004e5082fd1eb9ec9abfa2'
-client_secret = 'a9f71b4ef21b4b1b9f08d918c04c0c89'
+client_id = xxxxxxxxx
+client_secret = xxxxxxxxxx
 token = SpotifyAPI(client_id, client_secret)
 SpotifyAPI.Get_Token(token)
 SpotifyAPI.Get_audio_features(token, Urls_100s, List_for_track_features)
