@@ -41,11 +41,7 @@ There were many things that I was not happy with during this project. The first 
 One of the main things that stumped me was the accuracy of the model. Which is Usually a good thing but can also mean that there was some data leakage occurring. The reason I was concerned by this was that the majority of mood classification models found online the average accuracy achieved was around 75-80 percent. With my model being 92% percent I wanted to make sure there was nothing wrong. I double checked the code but was unable to determine where, if any, data leakage would have occurred. I am hoping with more data I will be able to use a larger test set and get a model that may be less accurate, but is better at determining new data. 
     
 ## References:
-## All my code can be found here:
-- https://github.com/BLoTz33/Ukrainians_Moods 
-    
-- https://github.com/BLoTz33/Python_Functions
-## Articles refrenced:
+
 - https://medium.com/geekculture/simple-emotion-classification-in-python-40fb24692541
 - https://medium.com/codex/music-mood-classification-using-neural-networks-and-spotifys-web-api-d73b391044a4
 - https://mikemoschitto.medium.com/deep-learning-and-music-mood-classification-of-spotify-songs-b2dda2bf455
